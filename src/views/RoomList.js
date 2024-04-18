@@ -7,7 +7,7 @@ export function RoomList() {
   const section = document.createElement("section");
 
   section.innerHTML = `
-    <h2>Room List</h2>
+    <h2>Lista pokoi</h2>
     <p class="loading text-danger">Ladowanie pokoi...</p>
     `;
 
@@ -28,7 +28,7 @@ export function RoomList() {
         `;
 
         const roomDetailsComponent = () => RoomDetails(room);
-        const readMoreButton = NavButton("Read more", roomDetailsComponent);
+        const readMoreButton = NavButton("Zobacz więcej", roomDetailsComponent);
 
         const addToCartButton = AddToCartButton(() => cartManager.add(room));
         li.lastElementChild.append(readMoreButton, addToCartButton);

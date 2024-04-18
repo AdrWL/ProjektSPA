@@ -1,5 +1,20 @@
 {
-  "users": [],
+  "users": [
+    {
+      "id": 1,
+      "name": "Jan Kowalski",
+      "email": "jan.kowalski@example.com",
+      "password": "haslo123",
+      "avatar": "path/to/avatar1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Anna Nowak",
+      "email": "anna.nowak@example.com",
+      "password": "haslo456",
+      "avatar": "path/to/avatar1.jpg"
+    }
+  ],
   "rooms": [
     {
       "id": 1,

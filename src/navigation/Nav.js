@@ -2,11 +2,13 @@ import { Cart } from '../views/Cart';
 import { Home } from '../views/Home';
 import { RoomList } from '../views/RoomList';
 import { NavButton } from './NavButton';
+import { Login } from '../common/login';
 
 const navItems = [
-  { text: "Home", component: Home },
-  { text: "Rooms", component: RoomList },
-  { text: "Cart", component: Cart },
+  { text: "Stronga Główna", component: Home },
+  { text: "Zobacz Pokoje", component: RoomList },
+  { text: "Rezerwacja", component: Cart },
+  { text: "Logowanie", component: Login },
 ];
 
 export function Nav() {

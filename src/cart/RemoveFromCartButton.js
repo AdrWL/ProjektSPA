@@ -4,7 +4,7 @@ export function RemoveFromCartButton(callback) {
     const removeFromCartButton = document.createElement('button');
 
     removeFromCartButton.classList.add('btn', 'btn-secondary');
-    removeFromCartButton.textContent = 'Remove from Cart';
+    removeFromCartButton.textContent = 'Usuń';
     removeFromCartButton.addEventListener('click', () => {
         callback();
 

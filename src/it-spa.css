@@ -6,6 +6,12 @@ body {
   min-height: 100vh;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 section {
   margin: 20px auto;
   padding: 20px;
@@ -47,4 +53,29 @@ img {
   margin-top: 20px;
   color: #888;
   font-size: 14px;
+}
+
+.btn {
+  margin: 5px; 
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: center; 
+}
+
+.form-group label {
+  margin-right: 15px;
+}
+
+.form-group input {
+  width: 40%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error-message {
+  display: none;
+  margin-top: 20px;
 }

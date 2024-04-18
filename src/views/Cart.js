@@ -5,14 +5,14 @@ export function Cart() {
   const section = document.createElement('section');
 
   section.innerHTML = `
-    <h2>Cart</h2>
-    <p>Przegląd zawartosci swojego koszyka.</p>
+    <h2>Zamówienie</h2>
+    <p>Przegląd zawartosci swoich rezerwacji.</p>
     <table class="table">
         <tr>
-         <th>Name</th>
-         <th>Quality</th>
-         <th>Price</th>
-         <th>Remove</th>
+         <th>Nazwa</th>
+         <th>Liczba</th>
+         <th>Cena</th>
+         <th></th>
         </tr>
     </table>
     `;

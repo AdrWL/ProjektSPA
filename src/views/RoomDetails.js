@@ -3,9 +3,9 @@ export function RoomDetails(room) {
 
     section.innerHTML = `
         <h2>${room.name}</h2>
-        <p>Price: ${room.price.toFixed(2)} PLN</p>
-        <p>Beds: ${room.beds}x 🛏️</p>
-        <p>Guests: ${room.guests}x 🧒</p>
+        <p>Cena: ${room.price.toFixed(2)} PLN</p>
+        <p>Łóżka: ${room.beds}x 🛏️</p>
+        <p>Max ilość osób: ${room.guests}x 🧒</p>
     `;
 
     return section;
