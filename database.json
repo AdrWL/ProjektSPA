@@ -13,6 +13,12 @@
       "email": "anna.nowak@example.com",
       "password": "haslo456",
       "avatar": "path/to/avatar1.jpg"
+    },
+    {
+      "name": "Jacek Nowak",
+      "email": "wp2@wp.pl",
+      "password": "password",
+      "id": 3
     }
   ],
   "rooms": [
