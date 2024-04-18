@@ -30,7 +30,11 @@ export function RoomList() {
         const roomDetailsComponent = () => RoomDetails(room);
         const readMoreButton = NavButton("Zobacz więcej", roomDetailsComponent);
 
-        const addToCartButton = AddToCartButton(() => cartManager.add(room));
+        const addToCartButton = AddToCartButton(() => {
+          cartManager.add(room);
+          displayReservationMessage(li);
+        });
+
         li.lastElementChild.append(readMoreButton, addToCartButton);
 
         return li;
@@ -42,4 +46,20 @@ export function RoomList() {
     });
 
   return section;
+}
+
+function displayReservationMessage(element) {
+  const message = document.createElement('div');
+  message.innerHTML = `
+    <div class="alert alert-success my-2" role="alert">
+      Pokój został zarezerwowany
+    </div>
+  `;
+
+  element.appendChild(message);
+
+  // Usuwanie komunikatu po 2 sekundach
+  setTimeout(() => {
+    message.remove();
+  }, 2000);
 }
