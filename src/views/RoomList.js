@@ -1,4 +1,7 @@
 import { NavButton } from "../navigation/NavButton";
+import { RoomDetails } from './RoomDetails';
+import { AddToCartButton } from "../cart/AddToCartButton";
+import { cartManager } from "../cart/cart-manager";
 
 export function RoomList() {
   const section = document.createElement("section");
@@ -26,6 +29,9 @@ export function RoomList() {
 
         const roomDetailsComponent = () => RoomDetails(room);
         const readMoreButton = NavButton("Read more", roomDetailsComponent);
+
+        const addToCartButton = AddToCartButton(() => cartManager.add(room));
+        li.lastElementChild.append(readMoreButton, addToCartButton);
 
         return li;
       });
