@@ -1,9 +1,14 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./it-spa.css";
-import { Home } from "./views/Home";
+
+import { Nav } from './navigation/Nav';
+import { Home } from './views/Home';
 
 
 const main = document.querySelector("main");
+
+
+main.before(Nav());
 
 main.append(Home());
 
