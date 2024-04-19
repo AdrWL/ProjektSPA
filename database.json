@@ -48,6 +48,13 @@
       "password": "test",
       "avatar": "https://i.pravatar.cc/300",
       "id": 7
+    },
+    {
+      "name": "Jan kowalski",
+      "email": "test222@wp.pl",
+      "password": "test",
+      "avatar": "https://i.pravatar.cc/300",
+      "id": 8
     }
   ],
   "rooms": [
