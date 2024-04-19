@@ -3,12 +3,15 @@ import "./it-spa.css";
 
 import { Nav } from './navigation/Nav';
 import { Home } from './views/Home';
+import { Date } from './views/Date';
 
 
 const main = document.querySelector("main");
 
 
 main.before(Nav());
+
+main.before(Date());
 
 main.append(Home());
 

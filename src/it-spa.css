@@ -59,23 +59,43 @@ img {
   margin: 5px; 
 }
 
-.form-group {
-  margin-bottom: 15px;
-  text-align: center; 
+.needs-validation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.form-group label {
-  margin-right: 15px;
+.form-control {
+  width: 22em;
 }
 
-.form-group input {
-  width: 40%; 
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.mb-3:last-of-type .form-control {
+  background-color: transparent;
 }
 
 .error-message {
   display: none;
   margin-top: 20px;
 }
+
+.reservation-info {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.select-date {
+  text-align: center;
+  width: 35%;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.loading {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
