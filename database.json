@@ -5,42 +5,49 @@
       "name": "Jan Kowalski",
       "email": "jan.kowalski@example.com",
       "password": "haslo123",
-      "avatar": "src/avatar1.jpg"
+      "avatar": "https://i.pravatar.cc/300"
     },
     {
       "id": 2,
       "name": "Anna Nowak",
       "email": "anna.nowak@example.com",
       "password": "haslo456",
-      "avatar": "src/avatar1.jpg"
+      "avatar": "https://i.pravatar.cc/300"
     },
     {
       "name": "Jacek Nowak",
       "email": "wp2@wp.pl",
       "password": "password",
       "id": 3,
-      "avatar": "src/avatar1.jpg"
+      "avatar": "https://i.pravatar.cc/300"
     },
     {
       "name": "test@wp.pl",
       "email": "test@wp.pl",
       "password": "test",
       "id": 4,
-      "avatar": "src/avatar1.jpg"
+      "avatar": "https://i.pravatar.cc/300"
     },
     {
       "name": "dddd",
       "email": "wp33@wp.pl",
       "password": "www",
       "id": 5,
-      "avatar": "src/avatar1.jpg"
+      "avatar": "https://i.pravatar.cc/300"
     },
     {
       "name": "test",
       "email": "test2@wp.pl",
       "password": "test",
       "id": 6,
-      "avatar": "src/avatar1.jpg"
+      "avatar": "https://i.pravatar.cc/300"
+    },
+    {
+      "name": "test12",
+      "email": "test12@wp.pl",
+      "password": "test",
+      "avatar": "https://i.pravatar.cc/300",
+      "id": 7
     }
   ],
   "rooms": [

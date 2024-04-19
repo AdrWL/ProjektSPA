@@ -68,7 +68,7 @@ export function Registration() {
           return;
         }
 
-        const avatar = "src/avatar1.jpg";
+        const avatar = "https://i.pravatar.cc/300";
 
         // Wysłanie danych do serwera
         fetch("http://localhost:3000/users", {
