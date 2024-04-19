@@ -5,20 +5,42 @@
       "name": "Jan Kowalski",
       "email": "jan.kowalski@example.com",
       "password": "haslo123",
-      "avatar": "path/to/avatar1.jpg"
+      "avatar": "src/avatar1.jpg"
     },
     {
       "id": 2,
       "name": "Anna Nowak",
       "email": "anna.nowak@example.com",
       "password": "haslo456",
-      "avatar": "path/to/avatar1.jpg"
+      "avatar": "src/avatar1.jpg"
     },
     {
       "name": "Jacek Nowak",
       "email": "wp2@wp.pl",
       "password": "password",
-      "id": 3
+      "id": 3,
+      "avatar": "src/avatar1.jpg"
+    },
+    {
+      "name": "test@wp.pl",
+      "email": "test@wp.pl",
+      "password": "test",
+      "id": 4,
+      "avatar": "src/avatar1.jpg"
+    },
+    {
+      "name": "dddd",
+      "email": "wp33@wp.pl",
+      "password": "www",
+      "id": 5,
+      "avatar": "src/avatar1.jpg"
+    },
+    {
+      "name": "test",
+      "email": "test2@wp.pl",
+      "password": "test",
+      "id": 6,
+      "avatar": "src/avatar1.jpg"
     }
   ],
   "rooms": [

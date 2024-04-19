@@ -28,33 +28,38 @@ export function Registration() {
     </form>
     <div id="registration-message" class="mt-3"></div>
   `;
-
+  
+  // Pobranie referencji do formularza i innych elementów
   const form = section.querySelector("#registration-form");
   const passwordInput = section.querySelector("#password");
-  const confirmPasswordInput = section.querySelector("#confirm-password");
   const passwordStrengthMeter = section.querySelector("#password-strength");
   const registrationMessage = section.querySelector("#registration-message");
 
+  // Dodanie nasłuchiwania na wprowadzenie hasła
   passwordInput.addEventListener("input", function () {
     const password = passwordInput.value;
     const strength = calculatePasswordStrength(password);
     passwordStrengthMeter.value = strength;
   });
 
+  // Dodanie nasłuchiwania na wysłanie formularza
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     event.stopPropagation();
 
+    // Pobranie wartości z formularza
     const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
     const confirmPassword = form.confirmPassword.value;
 
+    // Sprawdzenie, czy hasła są identyczne
     if (password !== confirmPassword) {
       registrationMessage.innerHTML = `<div class="alert alert-danger">Hasła nie są identyczne.</div>`;
       return;
     }
 
+    // Sprawdzenie, czy użytkownik o podanym e-mailu już istnieje
     fetch("http://localhost:3000/users")
       .then((response) => response.json())
       .then((users) => {
@@ -63,12 +68,15 @@ export function Registration() {
           return;
         }
 
+        const avatar = "src/avatar1.jpg";
+
+        // Wysłanie danych do serwera
         fetch("http://localhost:3000/users", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ name, email, password }),
+          body: JSON.stringify({ name, email, password, avatar }),
         })
           .then(() => {
             registrationMessage.innerHTML = `<div class="alert alert-success">Rejestracja zakończona sukcesem!</div>`;
@@ -84,6 +92,7 @@ export function Registration() {
   return section;
 }
 
+// Funkcja obliczająca siłę hasła
 function calculatePasswordStrength(password) {
   let strength = 0;
 

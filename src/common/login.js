@@ -56,7 +56,7 @@ export function Login() {
         section.innerHTML = `
             <h2>Witaj, ${user.name}!</h2>
             <p>Email: ${user.email}</p>
-            <p>Avatar: ${user.avatar}</p>
+            <img src="${user.avatar}" alt="Avatar użytkownika" class="avatar" />
         `;
 
         // Przycisk wylogowania
