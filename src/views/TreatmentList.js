@@ -49,6 +49,7 @@ export function TreatmentList() {
     return section;
 }
 
+// Informacja/komunkat o dokonanej rezerwacji zabiegu
 function displayReservationMessage(element) {
     const message = document.createElement('div');
     message.innerHTML = `

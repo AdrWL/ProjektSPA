@@ -4,7 +4,6 @@ import { RoomList } from '../views/RoomList';
 import { TreatmentList } from '../views/TreatmentList';
 import { Registration } from '../common/registration';
 import { NavButton } from './NavButton';
-
 import { Login } from '../common/login';
 
 const navItems = [

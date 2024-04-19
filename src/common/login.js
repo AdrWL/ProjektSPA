@@ -1,5 +1,3 @@
-// login.js
-
 export function Login() {
     const section = document.createElement('section');
 
@@ -66,6 +64,7 @@ export function Login() {
         logoutButton.innerText = 'Wyloguj';
         logoutButton.classList.add('btn', 'btn-danger', 'mt-3');
         logoutButton.addEventListener('click', () => {
+            // Usunięcie danych z localStorage
             localStorage.removeItem('loggedInUser');
             location.reload(); // Przeładowanie strony
         });

@@ -5,6 +5,7 @@ import { cartManager } from "../cart/cart-manager";
 import 'bootstrap-daterangepicker/daterangepicker.css';
 import DateRangePicker from 'bootstrap-daterangepicker';
 import moment from 'moment';
+// Ustawienie polskich dat w bibliotece moment
 import 'moment/locale/pl';
 
 moment.locale('pl');
@@ -75,6 +76,7 @@ export function RoomList() {
   return section;
 }
 
+// Informacja/komunkat o dokonanej rezerwacji pokoju
 function displayReservationMessage(element) {
   const message = document.createElement('div');
   message.innerHTML = `
