@@ -1,4 +1,5 @@
-// TreatmentDetails.js
+import { TreatmentList } from '../views/TreatmentList';
+import { NavButton } from "../navigation/NavButton";
 
 export function TreatmentDetails(treatmentId) {
     const section = document.createElement('section');
@@ -17,6 +18,10 @@ export function TreatmentDetails(treatmentId) {
                 <p>Zakres: ${treatment.area}</p>
                 <p>Czas: ${treatment.time} minut</p>
             `;
+
+            const backButton = NavButton('Powrót', TreatmentList);
+
+            section.appendChild(backButton);
         });
 
     return section;

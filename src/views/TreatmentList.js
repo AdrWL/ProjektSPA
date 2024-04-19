@@ -30,6 +30,7 @@ export function TreatmentList() {
                 `;
 
                 const readMoreButton = NavButton('Czytaj więcej', () => TreatmentDetails(treatment.id));
+                
                 const addToCartButton = AddToCartButton(() => {
                     cartManager.add(treatment);
                     displayReservationMessage(li);
