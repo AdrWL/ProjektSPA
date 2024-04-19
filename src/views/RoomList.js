@@ -2,14 +2,41 @@ import { NavButton } from "../navigation/NavButton";
 import { RoomDetails } from './RoomDetails';
 import { AddToCartButton } from "../cart/AddToCartButton";
 import { cartManager } from "../cart/cart-manager";
+import 'bootstrap-daterangepicker/daterangepicker.css';
+import DateRangePicker from 'bootstrap-daterangepicker';
+import moment from 'moment';
+import 'moment/locale/pl';
+
+moment.locale('pl');
 
 export function RoomList() {
   const section = document.createElement("section");
 
   section.innerHTML = `
     <h2>Lista pokoi</h2>
+    <input class="" type="text" name="daterange" />
     <p class="loading text-danger">Ladowanie pokoi...</p>
-    `;
+  `;
+
+
+  // Ustawienie dzisiejszej daty i daty maksymalnej
+  const today = moment();
+  const maxDate = moment().add(1, 'years');
+  const endDate = moment().add(1, 'days');
+
+  // Inicjalizacja daterangepicker
+  const dateRangeInput = section.querySelector('input[name="daterange"]');
+  new DateRangePicker(dateRangeInput, {
+    format: 'YYYY-MM-DD',
+    startDate: today,
+    endDate: endDate,
+    minDate: today,
+    maxDate: maxDate,
+    locale: {
+      cancelLabel: 'Anuluj',
+      applyLabel: 'Zastosuj'
+    },
+  });
 
   const ul = document.createElement("ul");
 
