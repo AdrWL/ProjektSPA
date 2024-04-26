@@ -11,11 +11,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.19",
     "bootstrap-daterangepicker": "^3.1.0",
     "json-server": "^0.17.4",
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "bootstrap": "^4.4.1",
     "daterangepicker": "^3.1.0",
     "jquery": "^3.4.1",
