@@ -13,11 +13,11 @@ export function TreatmentList() {
 
     const ul = document.createElement('ul');
 
-    // Pobieramy zabiegi (surowe dane)
+ 
     fetch('http://localhost:3000/treatments')
         .then(response => response.json())
         .then(treatments => {
-            // Wytwarzamy elementy listy
+         
             const lis = treatments.map(treatment => {
                 const li = document.createElement('li');
 
@@ -49,7 +49,7 @@ export function TreatmentList() {
     return section;
 }
 
-// Informacja/komunkat o dokonanej rezerwacji zabiegu
+
 function displayReservationMessage(element) {
     const message = document.createElement('div');
     message.innerHTML = `
@@ -60,7 +60,7 @@ function displayReservationMessage(element) {
 
     element.appendChild(message);
 
-    // Usuwanie komunikatu po 2 sekundach
+
     setTimeout(() => {
         message.remove();
     }, 2000);

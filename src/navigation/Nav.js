@@ -6,12 +6,10 @@ import { Registration } from '../common/Registration';
 import { NavButton } from './NavButton';
 import { Login } from '../common/Login';
 
-// Importowanie ikony FontAwesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { dom } from '@fortawesome/fontawesome-svg-core';
 
-// Dodanie ikony do biblioteki FontAwesome
 library.add(faBars);
 dom.watch();
 
@@ -28,17 +26,14 @@ export function Nav() {
   const nav = document.createElement("nav");
   nav.classList.add("nav");
 
-  // Tworzenie diva dla hamburgera
   const hamburgerDiv = document.createElement("div");
   hamburgerDiv.classList.add("hamburger");
 
   const icon = document.createElement("i");
-  icon.classList.add("fas", "fa-bars"); // Ikona z FontAwesome
+  icon.classList.add("fas", "fa-bars");
 
-  // Dodanie ikony do diva hamburgera
   hamburgerDiv.appendChild(icon);
 
-  // Tworzenie aside z listą nawigacyjną
   const asideElement = document.createElement("aside");
   asideElement.classList.add("asideElement");
 
@@ -52,7 +47,7 @@ export function Nav() {
     button.addEventListener('click', function () {
       if (window.innerWidth < 768) {
         asideElement.style.display = 'none';
-      }
+      } 
     });
 
     return button;
@@ -71,7 +66,16 @@ export function Nav() {
     }
   });
 
+  function handleWindowSize() {
+    if (window.innerWidth >= 768) {
+      asideElement.style.display = 'flex';
+    } else {
+      asideElement.style.display = 'none';
+    }
+  }
+
+  window.addEventListener('resize', handleWindowSize);
+  handleWindowSize();
+
   return nav;
 }
-
-

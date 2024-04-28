@@ -51,7 +51,6 @@ export function RoomList() {
   return section;
 }
 
-// Informacja/komunkat o dokonanej rezerwacji pokoju
 function displayReservationMessage(element) {
   const message = document.createElement('div');
   message.innerHTML = `
@@ -62,7 +61,6 @@ function displayReservationMessage(element) {
 
   element.appendChild(message);
 
-  // Usuwanie komunikatu po 2 sekundach
   setTimeout(() => {
     message.remove();
   }, 2000);

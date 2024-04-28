@@ -1,12 +1,9 @@
 import "bootstrap-daterangepicker/daterangepicker.css";
 import DateRangePicker from "bootstrap-daterangepicker";
 import moment from "moment";
-// Ustawienie polskich dat w bibliotece moment
 import "moment/locale/pl";
-
 moment.locale('pl');
 
-// Ustawienie dzisiejszej daty i daty maksymalnej
 export function Date() {
   const section = document.createElement("section");
 
@@ -19,7 +16,6 @@ export function Date() {
   const maxDate = moment().add(1, "years");
   const endDate = moment().add(1, "days");
 
-  // Inicjalizacja daterangepicker
   const dateRangeInput = section.querySelector('input[name="daterange"]');
   new DateRangePicker(dateRangeInput, {
     format: "YYYY-MM-DD",
