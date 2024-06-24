@@ -1,8 +1,10 @@
-![ProjektSPA](https://github.com/AdrWL/ProjektSPA/assets/105071559/6d713ed3-3787-4a60-9f15-87734653a1bd)
 
-![spa](https://github.com/AdrWL/ProjektSPA/assets/105071559/b9587ba2-7dc0-4f6d-859a-7dfda2119156)
-![spa2](https://github.com/AdrWL/ProjektSPA/assets/105071559/d40e7473-f8d1-4c17-8a68-7360193c30f6)
+![ProjektSPA (1)](https://github.com/AdrWL/ProjektSPA/assets/105071559/ea4612e6-168a-4304-aa0e-5797417c4c81)
 
+<div align="center">
+	<img src="https://github.com/AdrWL/ProjektSPA/assets/105071559/b9587ba2-7dc0-4f6d-859a-7dfda2119156">
+  <img src="https://github.com/AdrWL/ProjektSPA/assets/105071559/d40e7473-f8d1-4c17-8a68-7360193c30f6">
+</div>
 
 Prosty projekt demonstracyjny logowania i rejestracji użytkowników w IT SPA z wykorzystaniem Fetch API i Local Storage. Możliwość przeglądania pokoi, zabiegów, dodawanie ich do koszyka zamówień. Wyznaczanie dat przyjazdu.
 
